@@ -6,11 +6,11 @@ public class CharacterMove : MonoBehaviour {
 
 
 	// Player Movement Variables
-	 public int MoveSpeed = 10;
+	 public int moveSpeed = 10;
 	 public float JumpHeight;
 
 	//Player Grounded Variables
-	public Transform GroundCheck;
+	public Transform groundCheck;
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
 	private bool grounded;
@@ -20,23 +20,29 @@ public class CharacterMove : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	void FixedUpdate () {
-	grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 	}
 
-	//Update is called once per frame
+	// Update is called once per frame
 	void Update () {
 
-		//this code makes the character jump
+		// This code makes the character jump
 		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
 			Jump();
 	}
 }
 public void Jump (){
-	GetComponent<RigidBody2D>().velocity = new Vector2(GetComponent<RigidBody2D>()velocity.x, jumpHeight);
+	GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
+	}
 }
+
+// This code makes the character move from side to side using the A&D keys
+If(Input.GetKey (KeyCode.D)){
+	GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+	}
+	If(Input.GetKey (KeyCode.A)){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+	}
