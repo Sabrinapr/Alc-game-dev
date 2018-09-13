@@ -29,20 +29,20 @@ public class CharacterMove : MonoBehaviour {
 	void Update () {
 
 		// This code makes the character jump
-		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
+		if(Input.GetKeyDown (KeyCode.W)&& grounded){
 			Jump();
 	}
-}
-public void Jump (){
-	GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
-	}
-}
 
 // This code makes the character move from side to side using the A&D keys
-If(Input.GetKey (KeyCode.D)){
-	GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+	if(Input.GetKey (KeyCode.D)){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
 	}
-	If(Input.GetKey (KeyCode.A)){
+	if(Input.GetKey (KeyCode.A)){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		}
 	}
+	public void Jump(){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
+	}
+}	
