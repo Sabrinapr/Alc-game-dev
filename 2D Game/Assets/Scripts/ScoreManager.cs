@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour {
 
 	public static int Score;
 	
-	Text ScoeText;
+	Text ScoreText;
 
 	//use this for initialization
 	void Start () {
@@ -21,3 +21,13 @@ public class ScoreManager : MonoBehaviour {
 			Score = 0;
 		ScoreText.text = " " + Score;
 	}
+
+	public static void AddPoints (int PointsToAdd) {
+		Score += PointsToAdd;
+}
+
+	//public static void Reset (){
+	// Score=0;
+	//}
+
+}
