@@ -25,7 +25,7 @@ void Start () {
 	PC = FindObjectOfType<Rigidbody2D> ();
 }
 public void RespawnPlayer(){
-	StartCoroutine ("RespawnPCCo");
+	StartCoroutine ("RespawnPlayerCo");
 }
 public IEnumerator RespawnPlayerCo(){
 	//Generate Death Particle
@@ -40,7 +40,7 @@ public IEnumerator RespawnPlayerCo(){
 	//PointPenalty
 	ScoreManager.AddPoints(-PointPenaltyOnDeath);
 	//Debug Message
-	Debug.Log ("PC Respawn");
+	Debug.Log ("PlayerRespawn");
 	//Respawn Delay
 	yield return new WaitForSeconds (RespawnDelay);
 	//Gravity Restore
