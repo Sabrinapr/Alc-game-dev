@@ -1,8 +1,7 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class KillPC : MonoBehaviour {
+public class CheckPoint : MonoBehaviour {
 
 	public LevelManager levelManager;
 	
