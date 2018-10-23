@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class LevelManager : MonoBehaviour {
@@ -28,10 +27,10 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	public void RespawnPlayer(){
-		StartCoroutine ("RespawnPlayerCo");
+		StartCoroutine ("RespawnPCCo");
 	}
 
-	public IEnumerator RespawnPlayerCo(){
+	public IEnumerator RespawnPCCo(){
 		//Generate Death Particle
 		Instantiate (DeathParticle, PC.transform.position, PC.transform.rotation);
 		//Hide PC

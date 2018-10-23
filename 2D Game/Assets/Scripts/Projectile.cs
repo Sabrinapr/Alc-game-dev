@@ -16,8 +16,7 @@ public class Projectile : MonoBehaviour {
 	void Start () {
 		 
 		if(PC.transform.localScale.x < 0)
-			Speed = -Speed;
-			
+			Speed = -Speed;		
 	}
 	
 	// Update is called once per frame

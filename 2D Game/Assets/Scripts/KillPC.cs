@@ -1,25 +1,19 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class KillPC : MonoBehaviour {
 
-	public LevelManager levelManager;
-	
+
+	public LevelManager LevelManager;
+
 	// Use this for initialization
 	void Start () {
-		levelManager = FindObjectOfType <LevelManager>();
+		LevelManager = FindObjectOfType <LevelManager>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.name == "PC"){
-			levelManager.CurrentCheckPoint = gameObject;
-			Debug.Log ("Activated Checkpoint" + transform.position);
+			LevelManager.RespawnPlayer();
 		}
 		
 	}
