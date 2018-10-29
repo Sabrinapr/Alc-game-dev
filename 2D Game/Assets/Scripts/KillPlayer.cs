@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class KillPC : MonoBehaviour {
+public class KillPlayer : MonoBehaviour {
 
 
 	public LevelManager LevelManager;
