@@ -9,18 +9,12 @@ public class LevelManager : MonoBehaviour {
 	// Particles
 	public GameObject DeathParticle;
 	public GameObject RespawnParticle;
-
 	//Respawn Delay
 	public float RespawnDelay;
-
-
 	//Point Penalty on Death
 	public int PointPenaltyOnDeath;
-	
 	// Store Gravity Value
 	private float GravityStore;
-
-
 	// Use this for initialization
 	void Start () {
 		// PC = FindObjectOfType<Rigidbody2D> ();
