@@ -90,10 +90,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 9
-  TimeOut: 0
-  PC: {fileID: 0}
-  EnemyDeath: {fileID: 0}
-  ProjectileParticle: {fileID: 0}
+  TimeOut: 5
+  PC: {fileID: 1954454950051928, guid: d09c2ba4dc6894eb9ba7346eb81d0af0, type: 2}
+  EnemyDeath: {fileID: 1649350312735428, guid: 53488d4234b2042a5b902281e95b230e, type: 2}
+  ProjectileParticle: {fileID: 1300194721863822, guid: 70f4cdd18299647da8c1a77f8f2b5011,
+    type: 2}
   PointsForKill: 5
 --- !u!212 &212574059628483270
 SpriteRenderer:
@@ -129,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0

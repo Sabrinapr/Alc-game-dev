@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 4967178142806934}
-  Projectile: {fileID: 0}
+  Projectile: {fileID: 1493874290295702, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
 --- !u!114 &114966918154083190
 MonoBehaviour:
   m_ObjectHideFlags: 1
