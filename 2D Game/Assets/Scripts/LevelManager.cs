@@ -4,31 +4,39 @@ using System.Collections;
 public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
-	public Rigidbody2D PC;
+	public Rigidbody2D PC; 
+
 	public GameObject PC2;
+
 	// Particles
 	public GameObject DeathParticle;
 	public GameObject RespawnParticle;
+
 	//Respawn Delay
 	public float RespawnDelay;
+
+
 	//Point Penalty on Death
 	public int PointPenaltyOnDeath;
+	
 	// Store Gravity Value
 	private float GravityStore;
+
+
 	// Use this for initialization
 	void Start () {
-		PC = GameObject.Find("PC").GetComponent<Rigidbody2D>();
-		PC2 = GameObject.Find("PC");
+		// PC = FindObjectOfType<Rigidbody2D> ();
 	}
 	
 	public void RespawnPlayer(){
-		StartCoroutine ("RespawnPCCo");
+		StartCoroutine ("RespawnPlayerCo");
 	}
 
-	public IEnumerator RespawnPCCo(){
+	public IEnumerator RespawnPlayerCo(){
 		//Generate Death Particle
 		Instantiate (DeathParticle, PC.transform.position, PC.transform.rotation);
 		//Hide PC
+		// PC.enabled = false;
 		PC2.SetActive(false);
 		PC.GetComponent<Renderer> ().enabled = false;
 		// Gravity Reset
@@ -46,6 +54,7 @@ public class LevelManager : MonoBehaviour {
 		//Match PCs transform position
 		PC.transform.position = CurrentCheckPoint.transform.position;
 		//Show PC
+		// PC.enabled = true;
 		PC2.SetActive(true);
 		PC.GetComponent<Renderer> ().enabled = true;
 		//Spawn PC
