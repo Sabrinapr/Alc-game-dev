@@ -3,7 +3,10 @@ guid: a1584d81eea9c43198c590074a238f27
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FirePoint: {instanceID: 0}
+  - Projectile: {fileID: 1691581849701534, guid: 772ceda848db84fd699dd4ea95b515bb,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
