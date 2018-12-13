@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4302003521054620}
-  - component: {fileID: 212079589962315936}
+  - component: {fileID: 212844278836846052}
   - component: {fileID: 61104976174266066}
   - component: {fileID: 50547395299952100}
   - component: {fileID: 114055545685030630}
@@ -136,10 +136,10 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0013293698, y: -0.00068797916}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.27, y: 0.22}
+    newSize: {x: 0.26, y: 0.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   grounded: 0
+  animator: {fileID: 0}
 --- !u!114 &114605175819872982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 4666777800123888}
   Projectile: {fileID: 0}
---- !u!212 &212079589962315936
+--- !u!212 &212844278836846052
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -213,13 +214,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.72156864, b: 1, a: 1}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300054, guid: 845e837aaf005448998f5e065cdd6476, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.26, y: 0.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
