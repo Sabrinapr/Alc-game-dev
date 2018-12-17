@@ -35,10 +35,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4302003521054620}
   - component: {fileID: 212844278836846052}
-  - component: {fileID: 61104976174266066}
   - component: {fileID: 50547395299952100}
   - component: {fileID: 114055545685030630}
   - component: {fileID: 114605175819872982}
+  - component: {fileID: 95062703338587954}
+  - component: {fileID: 60881811049920260}
   m_Layer: 0
   m_Name: PC
   m_TagString: PC
@@ -122,8 +123,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61104976174266066
-BoxCollider2D:
+--- !u!60 &60881811049920260
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -134,7 +135,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0013293698, y: -0.00068797916}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,9 +145,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.13645877, y: 0.13736968}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.044765078, y: 0.12405479}
+      - {x: -0.038079023, y: 0.07403219}
+      - {x: -0.14905483, y: 0.011851112}
+      - {x: -0.13499999, y: -0.11}
+      - {x: 0.06815235, y: -0.11181363}
+      - {x: 0.070945226, y: -0.09393732}
+      - {x: 0.16310975, y: -0.061929546}
+      - {x: 0.11692941, y: 0.025984367}
+      - {x: 0.02885896, y: 0.13610189}
+--- !u!95 &95062703338587954
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315342231465682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f840b8714db574f31936fa4e97b350da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114055545685030630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,13 +186,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
-  JumpHeight: 7
+  jumpHeight: 0
   groundCheck: {fileID: 4565055255106178}
   groundCheckRadius: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  grounded: 0
   animator: {fileID: 0}
 --- !u!114 &114605175819872982
 MonoBehaviour:
