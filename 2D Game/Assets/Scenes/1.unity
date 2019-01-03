@@ -740,6 +740,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4666777800123888, guid: d09c2ba4dc6894eb9ba7346eb81d0af0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666777800123888, guid: d09c2ba4dc6894eb9ba7346eb81d0af0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.229
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d09c2ba4dc6894eb9ba7346eb81d0af0, type: 2}
   m_IsPrefabParent: 0
@@ -1530,7 +1538,6 @@ GameObject:
   - component: {fileID: 801011690}
   - component: {fileID: 801011689}
   - component: {fileID: 801011688}
-  - component: {fileID: 801011692}
   m_Layer: 0
   m_Name: tabletshard1 (1)
   m_TagString: Untagged
@@ -1627,30 +1634,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801011687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.36, y: 3.32, z: 0}
+  m_LocalPosition: {x: 16.21, y: 2.88, z: 0}
   m_LocalScale: {x: 3.181989, y: 3.2296534, z: 3.2110898}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &801011692
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 801011687}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82927aa74d27d44b79a040db7b5d7984, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &802411721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1651,6 @@ GameObject:
   - component: {fileID: 802411725}
   - component: {fileID: 802411724}
   - component: {fileID: 802411723}
-  - component: {fileID: 802411722}
   m_Layer: 0
   m_Name: tabletshard1 (3)
   m_TagString: Untagged
@@ -1670,24 +1658,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &802411722
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 802411721}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82927aa74d27d44b79a040db7b5d7984, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &802411723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,7 +1747,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 802411721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.85, y: 7.56, z: 0}
+  m_LocalPosition: {x: 2.84, y: 6.46, z: 0}
   m_LocalScale: {x: 3.181989, y: 3.2296534, z: 3.2110898}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2188,7 +2158,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1000485435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.29, y: -6.84, z: 0.071156666}
+  m_LocalPosition: {x: 12.2, y: 19.4, z: 0.071156666}
   m_LocalScale: {x: 3.47625, y: 4.13609, z: 1}
   m_Children: []
   m_Father: {fileID: 1687061074}
@@ -3549,6 +3519,48 @@ Transform:
   m_Father: {fileID: 1650641670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1939337671
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -52.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480661449749222, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 772ceda848db84fd699dd4ea95b515bb, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1941463818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3560,7 +3572,6 @@ GameObject:
   - component: {fileID: 1941463822}
   - component: {fileID: 1941463821}
   - component: {fileID: 1941463820}
-  - component: {fileID: 1941463819}
   m_Layer: 0
   m_Name: tabletshard1 (2)
   m_TagString: Untagged
@@ -3568,24 +3579,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1941463819
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1941463818}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 82927aa74d27d44b79a040db7b5d7984, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1941463820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3675,7 +3668,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941463818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.49, y: -10.4, z: 0}
+  m_LocalPosition: {x: -15.27, y: -6.82, z: 0}
   m_LocalScale: {x: 3.181989, y: 3.2296534, z: 3.2110898}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4086,8 +4079,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2080534330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -81.1, y: -36.5, z: 0}
-  m_LocalScale: {x: 19.981222, y: 19.930418, z: 6.0833263}
+  m_LocalPosition: {x: -67.2, y: -58, z: 0}
+  m_LocalScale: {x: 54.58978, y: 38.791676, z: 8.690138}
   m_Children: []
   m_Father: {fileID: 1650641670}
   m_RootOrder: 1
